@@ -1,0 +1,15 @@
+{
+  "id": "gradle",
+  "name": "Java (Gradle)",
+  "detectors": [{ "type": "gradle", "runnable": true, "files": ["build.gradle", "build.gradle.kts"] }],
+  "commandSources": [
+    {
+      "provider": "static",
+      "commands": [
+        { "key": "gradle:build", "label": "build", "command": "gradle build", "kind": "build" },
+        { "key": "gradle:test", "label": "test", "command": "gradle test", "kind": "test" },
+        { "key": "gradle:run", "label": "run", "command": "gradle run", "kind": "dev" }
+      ]
+    }
+  ]
+}

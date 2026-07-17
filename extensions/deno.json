@@ -1,0 +1,14 @@
+{
+  "id": "deno",
+  "name": "Deno",
+  "detectors": [{ "type": "deno", "runnable": true, "files": ["deno.json", "deno.jsonc"] }],
+  "commandSources": [
+    {
+      "provider": "static",
+      "commands": [
+        { "key": "deno:run", "label": "run", "command": "deno run -A main.ts", "kind": "dev" },
+        { "key": "deno:test", "label": "test", "command": "deno test -A", "kind": "test" }
+      ]
+    }
+  ]
+}

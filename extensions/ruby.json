@@ -1,0 +1,15 @@
+{
+  "id": "ruby",
+  "name": "Ruby",
+  "detectors": [{ "type": "ruby", "runnable": true, "files": ["Gemfile"] }],
+  "commandSources": [
+    {
+      "provider": "static",
+      "commands": [
+        { "key": "ruby:install", "label": "install", "command": "bundle install", "kind": "build" },
+        { "key": "ruby:rake", "label": "rake", "command": "bundle exec rake", "kind": "other" },
+        { "key": "ruby:test", "label": "test", "command": "bundle exec rake test", "kind": "test" }
+      ]
+    }
+  ]
+}

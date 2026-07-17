@@ -1,0 +1,15 @@
+{
+  "id": "elixir",
+  "name": "Elixir",
+  "detectors": [{ "type": "elixir", "runnable": true, "files": ["mix.exs"] }],
+  "commandSources": [
+    {
+      "provider": "static",
+      "commands": [
+        { "key": "mix:deps", "label": "deps.get", "command": "mix deps.get", "kind": "build" },
+        { "key": "mix:run", "label": "run", "command": "mix run", "kind": "dev" },
+        { "key": "mix:test", "label": "test", "command": "mix test", "kind": "test" }
+      ]
+    }
+  ]
+}

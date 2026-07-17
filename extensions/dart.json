@@ -1,0 +1,15 @@
+{
+  "id": "dart",
+  "name": "Dart / Flutter",
+  "detectors": [{ "type": "dart", "runnable": true, "files": ["pubspec.yaml"] }],
+  "commandSources": [
+    {
+      "provider": "static",
+      "commands": [
+        { "key": "dart:get", "label": "pub get", "command": "dart pub get", "kind": "build" },
+        { "key": "dart:run", "label": "run", "command": "dart run", "kind": "dev" },
+        { "key": "dart:test", "label": "test", "command": "dart test", "kind": "test" }
+      ]
+    }
+  ]
+}

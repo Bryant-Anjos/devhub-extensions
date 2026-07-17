@@ -1,0 +1,15 @@
+{
+  "id": "maven",
+  "name": "Java (Maven)",
+  "detectors": [{ "type": "maven", "runnable": true, "files": ["pom.xml"] }],
+  "commandSources": [
+    {
+      "provider": "static",
+      "commands": [
+        { "key": "mvn:compile", "label": "compile", "command": "mvn compile", "kind": "build" },
+        { "key": "mvn:test", "label": "test", "command": "mvn test", "kind": "test" },
+        { "key": "mvn:package", "label": "package", "command": "mvn package", "kind": "build" }
+      ]
+    }
+  ]
+}

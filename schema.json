@@ -1,0 +1,53 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "devhub extension",
+  "type": "object",
+  "required": ["id", "name", "detectors"],
+  "additionalProperties": false,
+  "properties": {
+    "id": { "type": "string", "pattern": "^[a-z0-9-]+$" },
+    "name": { "type": "string", "minLength": 1 },
+    "detectors": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": ["type", "runnable", "files"],
+        "additionalProperties": false,
+        "properties": {
+          "type": { "type": "string", "minLength": 1 },
+          "runnable": { "type": "boolean" },
+          "files": { "type": "array", "minItems": 1, "items": { "type": "string", "minLength": 1 } }
+        }
+      }
+    },
+    "commandSources": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["provider"],
+        "additionalProperties": false,
+        "properties": {
+          "provider": { "enum": ["scriptsFile", "static"] },
+          "file": { "type": "string" },
+          "keyPrefix": { "type": "string" },
+          "runTemplate": { "type": "string" },
+          "commands": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": ["key", "label", "command"],
+              "additionalProperties": false,
+              "properties": {
+                "key": { "type": "string" },
+                "label": { "type": "string" },
+                "command": { "type": "string" },
+                "kind": { "enum": ["dev", "build", "test", "prod", "other"] }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

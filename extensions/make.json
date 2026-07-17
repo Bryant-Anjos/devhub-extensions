@@ -1,0 +1,15 @@
+{
+  "id": "make",
+  "name": "Make",
+  "detectors": [{ "type": "make", "runnable": true, "files": ["Makefile", "makefile"] }],
+  "commandSources": [
+    {
+      "provider": "static",
+      "commands": [
+        { "key": "make:default", "label": "make", "command": "make", "kind": "dev" },
+        { "key": "make:build", "label": "build", "command": "make build", "kind": "build" },
+        { "key": "make:test", "label": "test", "command": "make test", "kind": "test" }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "name": "devhub-extensions",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Official registry of declarative extensions for devhub.",
+  "license": "MIT",
+  "type": "module",
+  "scripts": {
+    "validate": "node scripts/validate.mjs"
+  }
+}
