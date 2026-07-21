@@ -1,33 +1,33 @@
-# devhub extensions
+# Granspace extensions
 
-Official registry of **extensions** for [devhub](https://github.com/Bryant-Anjos/devhub) —
-a local project manager. An extension teaches devhub about a stack: **how to
+Official registry of **extensions** for [Granspace](https://github.com/granspace/granspace) —
+a local project manager. An extension teaches Granspace about a stack: **how to
 detect a project** and **what commands it can run**. Extensions are **declarative
 JSON** (no code runs), so installing one from here is safe.
 
-devhub ships built-ins (Node, Docker Compose, Unity, PHP, Python, Go, Rust). This
+Granspace ships built-ins (Node, Docker Compose, Unity, PHP, Python, Go, Rust). This
 repo adds more, community-maintained.
 
 ## Using an extension
 
-In devhub → **Settings → Extensions**:
+In Granspace → **Settings → Extensions**:
 
 - **Browse official extensions** — lists everything in this registry; click
   Install.
 - **Install from a URL** — paste any manifest URL (this repo's or your own).
 
-devhub validates the manifest, stores it, and merges it with the built-ins.
+Granspace validates the manifest, stores it, and merges it with the built-ins.
 
 ## What's here
 
-- [`registry.json`](registry.json) — the index devhub reads (id, name,
+- [`registry.json`](registry.json) — the index Granspace reads (id, name,
   description, manifest URL).
 - [`extensions/`](extensions) — one JSON manifest per extension.
 
-Registry URL (used by devhub):
+Registry URL (used by Granspace):
 
 ```
-https://raw.githubusercontent.com/Bryant-Anjos/devhub-extensions/main/registry.json
+https://raw.githubusercontent.com/granspace/extensions/main/registry.json
 ```
 
 ## Manifest format
@@ -53,7 +53,7 @@ https://raw.githubusercontent.com/Bryant-Anjos/devhub-extensions/main/registry.j
 
 | Field | Notes |
 |-------|-------|
-| `id` | kebab-case, unique, matches the filename (`extensions/<id>.json`). Can't shadow a devhub built-in. |
+| `id` | kebab-case, unique, matches the filename (`extensions/<id>.json`). Can't shadow a Granspace built-in. |
 | `name` | Display name. |
 | `detectors[]` | `{ type, runnable, files }` — a project matches if **any of `files` exists at its root**. Files are **exact names**, not globs. |
 | `commandSources[]` | Optional. How the stack's commands are discovered. |

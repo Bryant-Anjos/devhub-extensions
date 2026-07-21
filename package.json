@@ -1,8 +1,8 @@
 {
-  "name": "devhub-extensions",
+  "name": "extensions",
   "version": "1.0.0",
   "private": true,
-  "description": "Official registry of declarative extensions for devhub.",
+  "description": "Official registry of declarative extensions for Granspace.",
   "license": "MIT",
   "type": "module",
   "scripts": {

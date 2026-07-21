@@ -3,42 +3,42 @@
     "id": "ruby",
     "name": "Ruby",
     "description": "Bundler / Rake commands for Ruby projects (Gemfile).",
-    "url": "https://raw.githubusercontent.com/Bryant-Anjos/devhub-extensions/main/extensions/ruby.json"
+    "url": "https://raw.githubusercontent.com/granspace/extensions/main/extensions/ruby.json"
   },
   {
     "id": "elixir",
     "name": "Elixir",
     "description": "Mix commands for Elixir projects (mix.exs).",
-    "url": "https://raw.githubusercontent.com/Bryant-Anjos/devhub-extensions/main/extensions/elixir.json"
+    "url": "https://raw.githubusercontent.com/granspace/extensions/main/extensions/elixir.json"
   },
   {
     "id": "deno",
     "name": "Deno",
     "description": "Run / test commands for Deno projects (deno.json).",
-    "url": "https://raw.githubusercontent.com/Bryant-Anjos/devhub-extensions/main/extensions/deno.json"
+    "url": "https://raw.githubusercontent.com/granspace/extensions/main/extensions/deno.json"
   },
   {
     "id": "maven",
     "name": "Java (Maven)",
     "description": "Maven commands for Java projects (pom.xml).",
-    "url": "https://raw.githubusercontent.com/Bryant-Anjos/devhub-extensions/main/extensions/maven.json"
+    "url": "https://raw.githubusercontent.com/granspace/extensions/main/extensions/maven.json"
   },
   {
     "id": "gradle",
     "name": "Java (Gradle)",
     "description": "Gradle commands for JVM projects (build.gradle).",
-    "url": "https://raw.githubusercontent.com/Bryant-Anjos/devhub-extensions/main/extensions/gradle.json"
+    "url": "https://raw.githubusercontent.com/granspace/extensions/main/extensions/gradle.json"
   },
   {
     "id": "dart",
     "name": "Dart / Flutter",
     "description": "Dart commands for Dart/Flutter projects (pubspec.yaml).",
-    "url": "https://raw.githubusercontent.com/Bryant-Anjos/devhub-extensions/main/extensions/dart.json"
+    "url": "https://raw.githubusercontent.com/granspace/extensions/main/extensions/dart.json"
   },
   {
     "id": "make",
     "name": "Make",
     "description": "Common make targets (Makefile).",
-    "url": "https://raw.githubusercontent.com/Bryant-Anjos/devhub-extensions/main/extensions/make.json"
+    "url": "https://raw.githubusercontent.com/granspace/extensions/main/extensions/make.json"
   }
 ]

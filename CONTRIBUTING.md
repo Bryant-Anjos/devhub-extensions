@@ -15,7 +15,7 @@ Thanks for adding a stack! Extensions are declarative JSON — no code.
      "id": "your-id",
      "name": "Your Stack",
      "description": "Short description.",
-     "url": "https://raw.githubusercontent.com/Bryant-Anjos/devhub-extensions/main/extensions/your-id.json"
+     "url": "https://raw.githubusercontent.com/granspace/extensions/main/extensions/your-id.json"
    }
    ```
 
@@ -31,7 +31,7 @@ Thanks for adding a stack! Extensions are declarative JSON — no code.
 
 - **Detection** uses exact filenames, not globs. Pick a marker file a project of
   that stack always has (e.g. `Gemfile`, `pom.xml`, `Cargo.toml`).
-- Don't reuse a devhub built-in `id` (node, docker, unity, php, python, go, rust) —
+- Don't reuse a Granspace built-in `id` (node, docker, unity, php, python, go, rust) —
   those can't be shadowed.
 - Keep commands **non-interactive** and generally useful (install / run / test /
   build). Avoid framework-specific assumptions unless the marker file implies it.
